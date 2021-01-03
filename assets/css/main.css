@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Global */
+:root {
+  --clr-red: #f63854;
+  --clr-gray-1: #abacae;
+  --clr-gray: #585b60;
+  --clr-black: #222222;
+  --clr-black-1: #333333;
+}
+
+body {
+  color: var(--clr-gray-1);
+  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-black);
+  font-weight: bold;
+  font-family: "Arvo", "Open Sans", sans-serif;
+}
+
+a {
+  color: var(--clr-red);
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: var(--clr-red);
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.btn,
+.btn.btn-secondary:hover {
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: var(--clr-red);
+  border-radius: 30px;
+  border-color: var(--clr-red);
+  border-style: dotted;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn-secondary {
+  color: var(--clr-red);
+  background: transparent;
+  border-color: var(--clr-red);
+}
+
+/* Header */
+.header {
+  transition: all 0.3s;
+}
+
+.header.sticky {
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar-area {
+  position: relative;
+}
+
+.header .navbar {
+  padding: 20px 0;
+}
+
+.header .navbar .navbar-brand img {
+  max-width: 150px;
+}
+
+.header .navbar .navbar-nav .nav-item {
+  margin-left: 40px;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--clr-gray);
+  transition: all 0.3s;
+  padding: 0;
+  position: relative;
+}
+
+.header .navbar .navbar-nav .nav-item.active .nav-link,
+.header .navbar .navbar-nav .nav-item:hover .nav-link {
+  color: var(--clr-red);
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: 0 auto;
+  transition: all 0.3s;
+  background: var(--clr-red);
+}
+
+.header .navbar .navbar-nav .nav-item:hover .nav-link::after {
+  width: 100%;
+}
+
+/* Hero Section */
+#hero-area {
+  position: relative;
+  overflow: hidden;
+  min-height: 650px;
+  padding: 200px 0 80px;
+  background-image: url("../img/hero-area.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero-area .content h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  line-height: 60px;
+}
+
+#hero-area .content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#hero-area .content .header-button {
+  margin-top: 20px;
+}
+
+#hero-area .content .header-button .btn:first-child {
+  margin-right: 10px;
+}
+
+/* Footer */
+.footer-area {
+  color: var(--clr-black-1);
+  padding: 150px 0 0;
+}
+
+.footer-area p {
+  font-size: 14px;
+}
+
+.footer-area .footer-link,
+.footer-area .address {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-area .footer-logo {
+  width: 200px;
+}
+
+.footer-area a {
+  font-size: 14px;
+  color: var(--clr-gray);
+}
+
+.footer-area a:hover {
+  color: var(--clr-red);
+}
+
+.footer-area .footer-title {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+}
+
+.footer-area .footer-link li {
+  margin-bottom: 10px;
+}
+
+.footer-area .address li {
+  margin-bottom: 20px;
+}
+
+.footer-area .address li a {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-area .address li a .address-icon {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+}
+
+.footer-area .social-icon a {
+  color: #272727;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 15px 6px 12px 4px;
+  transition: all 0.3s;
+}
+
+.footer-area .social-icon a:hover {
+  color: white;
+}
+
+.footer-area .social-icon a.facebook:hover {
+  background-color: #007bff;
+}
+
+.footer-area .social-icon a.twitter:hover {
+  background-color: #4a9cec;
+}
+
+.footer-area .social-icon a.instagram:hover {
+  background-color: #d6274d;
+}
+
+.footer-area .social-icon a.linkedin:hover {
+  background-color: #1260a2;
+}
+
+/* Copyright */
+#copyright .copyright-content {
+  color: var(--clr-black-1);
+  width: 100%;
+  margin-top: 45px;
+  padding: 15px;
+  border-top: 1px solid var(--clr-gray-1);
+  text-align: center;
+}
+
+#copyright p {
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 42px;
+}
