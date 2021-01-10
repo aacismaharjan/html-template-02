@@ -1,0 +1,8 @@
+// HTML Template - Fusion
+1) Basic Slicing ( Done ) 
+2) Loader, Go to top page button, Style Navigation, Sticky Nav ( 50% Done )
+3) Mobile Responsive ( Done)
+4) Animations ( Remaining)
+5) Test codes ( Remaining)
+6) Refactor codes ( Remaining)
+7) Optimize codes ( Remaining)

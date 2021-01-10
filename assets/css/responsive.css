@@ -1,0 +1,37 @@
+@media (max-width: 1199px) and (min-width: 992px) {
+  #team .team-item .content {
+    padding: 15px 15px 15px 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-header .section-title {
+    font-size: 22px;
+  }
+
+  #hero-area {
+    padding: 120px 0 80px;
+  }
+
+  #hero-area .content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+
+  #team .team-item {
+    flex-direction: column;
+  }
+
+  #team .team-item .team-img {
+    width: 100%;
+  }
+
+  #cta .cta-text h4 {
+    font-size: 28px;
+  }
+
+  .footer-area {
+    padding: 60px 0 0;
+  }
+}
